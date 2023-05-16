@@ -1,4 +1,4 @@
-##Vedran Deskovski 213159
+## Vedran Deskovski 213159
 
 ##Control Flow Graph
 ![cfg](https://github.com/Vedran-D/SI_2023_lab2_213159/assets/61386261/b52ef8bf-85c7-4303-aa34-cf5d88c77113)
