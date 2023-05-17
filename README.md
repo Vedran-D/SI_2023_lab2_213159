@@ -67,3 +67,6 @@ Test 1: user = null<br>
 Test 2: user = User(username1, null, test@gmail.com)<br>
 Test 3: user = User(username1, password!, null)<br>
 Test 4: user = User(username1, password!, test@gmail.com)<br>
+
+## Објаснување на напишаните unit tests<br>
+Во претходно напишаниот дел на овој ReadMe.md file и во java file-от (во коментари) имам кратко објаснување за секој test case кога и зошто се користи.
