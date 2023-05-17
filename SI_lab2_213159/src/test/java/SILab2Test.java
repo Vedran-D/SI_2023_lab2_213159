@@ -36,7 +36,7 @@ class SILab2Test {
         assertFalse(SILab2.function(new User("username1","use r123123!","email.com"),users)); // blank space in password
         assertFalse(SILab2.function(new User("username1","user","email.com"),users)); // password has no special characters
         assertFalse(SILab2.function(new User("someName1","user","email.com"),users)); // user with same name with someone from usersList
-        assertFalse(SILab2.function(new User("username1","user","someEmail2@gmail.com"),users)); // user with same email with someone from usersList
+        assertFalse(SILab2.function(new User("username1","user","someEmail2@gmail.com"),users)); // user with same e-mail with someone from usersList
     }
 
     @Test
