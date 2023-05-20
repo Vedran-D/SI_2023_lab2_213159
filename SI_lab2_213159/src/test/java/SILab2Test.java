@@ -29,7 +29,7 @@ class SILab2Test {
         SILab2.function(noName,users);
         assertEquals("email@gmail.com", noName.getUsername()); // here I pass a user with no username and later in the function it is assigned a username based on the user's e-mail, should return true
 
-        assertTrue(SILab2.function(new User("perfUsername","perfPassword!","perfEmail@gmai..com"), users)); // good username, will return true
+        assertTrue(SILab2.function(new User("perfUsername","perfPassword!","perfEmail@gmail.com"), users)); // good username, will return true
         assertFalse(SILab2.function(new User("username1","password!","email.com"),users)); // invalid email
         assertFalse(SILab2.function(new User("username1","username1!!!","email.com"),users)); // invalid password
         assertFalse(SILab2.function(new User("username1","use!","email.com"),users)); // invalid password length
@@ -59,7 +59,7 @@ class SILab2Test {
 
         RuntimeException ex2 = null;
         try{
-            SILab2.function(new User("perfUsername","perfPassword!","perfEmail@gmai..com"),users);
+            SILab2.function(new User("perfUsername","perfPassword!","perfEmail@gmail.com"),users);
         }
         catch (RuntimeException e){
             ex2 = e;
