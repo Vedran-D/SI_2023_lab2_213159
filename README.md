@@ -43,17 +43,15 @@ Vedran Deskovski 213159
 25 => 26<br>
 Ќе ги имаме следните тест случаеви:<br>
 Test 1: user = null (проверувам дали објектот е нулл)<br>
-Test 2: user = User(username1, null, test@gmail.com) (дали пасворд е нулл)<br>
-Test 3: user = User(username1, password!, null) (дали емаил е нулл)<br>
-Test 4: user = User(null, password!,test@gmail.com) (дали кор. име е нулл)<br>
-Test 5: user = User(username1, password!, test@gmail.com) (овој корисник е „совршен“, затоа што има име, пасворд со спец. карак. и емаил со потребните знаци)<br>
-Test 6: user = User(username1, password!, testgmail.com) (невалиден емаил)<br>
-Test 7: user = User(username1, username1!, test@gmail.com) (невалиден пасворд)<br>
-Test 8: user = User(username1, user, test@gmail.com) (големината на пасвордот е помала од 8)<br>
-Test 9: user = User(username1, username1 !, test@gmail.com) (има празно место во пасвордот)<br>
-Test 10: user = User(username1, password, test@gmail.com) (пасвордот нема спец. карактер)<br>
-Test 11: ако имам некој user чие што име се совпаѓа со некое име од листата на users<br>
-Test 12: ако имам некој user чие што емаил адреса се совпаѓа со некоја адреса од листата на users<br>
+Test 2: user = User(null, password!,test@gmail.com) (дали кор. име е нулл)<br>
+Test 3: user = User(username1, password!, test@gmail.com) (овој корисник е „совршен“, затоа што има име, пасворд со спец. карак. и емаил со потребните знаци)<br>
+Test 4: user = User(username1, password!, testgmail.com) (невалиден емаил)<br>
+Test 5: user = User(username1, username1!, test@gmail.com) (невалиден пасворд)<br>
+Test 6: user = User(username1, user, test@gmail.com) (големината на пасвордот е помала од 8)<br>
+Test 7: user = User(username1, username1 !, test@gmail.com) (има празно место во пасвордот)<br>
+Test 8: user = User(username1, password, test@gmail.com) (пасвордот нема спец. карактер)<br>
+Test 9: ако имам некој user чие што име се совпаѓа со некое име од листата на users<br>
+Test 10: ако имам некој user чие што емаил адреса се совпаѓа со некоја адреса од листата на users<br>
 
 ## Тестови според Multiple Condition критериум<br>
 условот е претставен на следниот начин: if (user==null || user.getPassword()==null || user.getEmail()==null)<br>
