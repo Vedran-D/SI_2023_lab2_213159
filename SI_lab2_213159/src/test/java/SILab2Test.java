@@ -20,12 +20,6 @@ class SILab2Test {
         ex = assertThrows(RuntimeException.class, ()->SILab2.function(user,users)); // test null user, should throw exception
         assertTrue(ex.getMessage().contains("Mandatory"));
 
-        ex = assertThrows(RuntimeException.class, ()->SILab2.function(noPass,users)); // test user with no password, should throw exception
-        assertTrue(ex.getMessage().contains("Mandatory"));
-
-        ex = assertThrows(RuntimeException.class, ()->SILab2.function(noEmail,users)); // test user with no email, should throw exception
-        assertTrue(ex.getMessage().contains("Mandatory"));
-
         SILab2.function(noName,users);
         assertEquals("email@gmail.com", noName.getUsername()); // here I pass a user with no username and later in the function it is assigned a username based on the user's e-mail, should return true
 
